@@ -20,7 +20,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Trust Manager System'
+project = 'Trust Manager System (TMS)'
 copyright = '2024, Texas Advanced Computing Center, University of Texas, Austin'
 author = 'Cloud and Interactive Computing'
 
