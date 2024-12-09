@@ -1,29 +1,40 @@
-===================
-Welcome to Tapis v3
-===================
+=========================================
+Welcome to the Trust Manager System (TMS)
+=========================================
 
+What Problem is TMS Addressing?
+_______________________________
 
-What is Tapis v3
-________________
+Scientific workflows often run for a long time and access resources across multiple sites. The challenge in automating these workflows is to (1) securely manage user credentials, and (2) execute without human intervention. The two main impediments to automation are restrictions on sharing credentials and Multi-Factor Authentication (MFA) challenges that require a human-in-the-loop.  
 
-**Tapis** is an NSF-funded web-based API framework for  securely  managing  computational  workloads  across
-infrastructure  and  institutions,  so  that  experts  can  focus  on  their research  instead  of  the  technology
-needed  to  accomplish  it.  As part of work funded by the National Science Foundation starting in 2019, Tapis is
-delivering a version 3 (“v3”) of its platform with several  new  capabilities,  including  a  multi-site  Security
-Kernel, Streaming  Data  APIs,  and  first-class  support  for  containerized applications.
+To address these challenges, **TMS** implements automated, no human-in-the-loop authentication that allows applications to connect to host systems on behalf of users and issue commands as those users. The goals for automated application
+authentication under TMS are:
 
-This documentation describes **Tapis v3**, the latest version of the project. If you are looking for documentation on the curent production Tapis v2 platform, please go here_.
+   - No manual key distribution
+   - No human-in-the-loop, limited duration MFA
+   - No user secrets shared with applications
+   - Account access using federated identities
 
-.. _here: https://tacc-cloud.readthedocs.io/projects/agave/en/latest/agave/introduction/introduction.html
+What is TMS?
+____________
+
+In its fullest incarnation, TMS is a multi-tenant web application exposing a REST API to manage SSH keys, client applications, user delegations, user/MFA authentication, hosts, and user/host account mappings.  TMS also has a modules that run on hosts, such as High Performance Computing (HPC) login nodes, VMs or IoT devices.
+
+In its initial incarnation, the **TMS MVP** (Minimal Viable Product) makes a number of simplifying assumptions and implements only a subset of the full API's capabilities.  This is the TMS version currently available.  
 
 
 About This Documentation
 ________________________
 
-This documentation includes the :doc:`getting-started/index`  guide -- a basic introduction to Tapis v3 --
-as well as an in-depth Technical guide; see the :doc:`technical/index` or browse directly to the section of interest.
-All Tapis APIs are defined using the OpenAPI v3 specification_. If you are looking for the complete Tapis API reference
-or to download the Tapis OpenAPI spec files, see our LiveDocs_.
+This documentation includes:
 
-.. _specification: https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md
-.. _LiveDocs: https://tapis-project.github.io/live-docs/
+   - :doc:`getting-started/index` -- a basic introduction to TMS
+   - :doc:`technical/index` -- design and API discussions
+   
+From a running TMS server, one can extract TMS's OpenAPI v3 specification and interact with its live API web page.  The links below are examples of those available to developers at the Texas Advanced Computing Center (TACC).  Similar links will work in any TMS installation by appropriately replacing the host component of the URLs.
+
+   - specification_ -- OpenAPI JSON specification
+   - LiveDocs_ -- Live API web page 
+
+.. _specification: https://tms-server-dev.tacc.utexas.edu:3000/spec
+.. _LiveDocs: https://tms-server-dev.tacc.utexas.edu:3000
