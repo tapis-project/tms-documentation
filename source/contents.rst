@@ -8,20 +8,26 @@ Welcome to TMS Documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Introduction:
+   :caption: Introduction
 
    index
    getting-started/index
 
 .. toctree::
    :maxdepth: 2
-   :caption: Technical Guide:
+   :caption: Technical Guide
 
    technical/index
 
 .. toctree::
    :maxdepth: 2
-   :caption: Deployment & Administration:
+   :caption: Deployment 
 
    deployment/index
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Administration
+
+   administration/index
 

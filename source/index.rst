@@ -1,9 +1,23 @@
-=========================================
-Welcome to the Trust Manager System (TMS)
-=========================================
+..
+    Comment: Heirarchy of headers will now be!
+    1: ### over and under
+    2: === under
+    3: --- under
+    4: ^^^ under
+    5: ~~~ under
 
-What Problem is TMS Addressing?
-_______________________________
+.. raw:: html
+
+    <style> .red {color:#FF4136; font-weight:bold; font-size:20px} </style>
+
+.. role:: red
+
+##############
+Welcome to TMS
+##############
+
+What Problem does TMS Address?
+==============================
 
 Scientific workflows often run for a long time and access resources across multiple sites. The challenge in automating these workflows is to (1) securely manage user credentials, and (2) execute without human intervention. The two main impediments to automation are restrictions on sharing credentials and Multi-Factor Authentication (MFA) challenges that require a human-in-the-loop.  
 
@@ -16,25 +30,32 @@ authentication under TMS are:
    - Account access using federated identities
 
 What is TMS?
-____________
+============
 
 In its fullest incarnation, TMS is a multi-tenant web application exposing a REST API to manage SSH keys, client applications, user delegations, user/MFA authentication, hosts, and user/host account mappings.  TMS also has a modules that run on hosts, such as High Performance Computing (HPC) login nodes, VMs or IoT devices.
 
-In its initial incarnation, the **TMS MVP** (Minimal Viable Product) makes a number of simplifying assumptions and implements only a subset of the full API's capabilities.  This is the TMS version currently available.  
+In its initial incarnation, the **TMS MVP** (Minimal Viable Product) makes a number of simplifying assumptions and implements only a subset of the full API capabilities.  This is the TMS version currently available and it's comprised of two components.  The **tms_server** web application implements all APIs and maintains state in a Sqlite database.  The **KeyCmd** module is a small executable loaded by SSHD that runs on machines into which TMS client applications login on behalf of users.   
 
 
 About This Documentation
-________________________
+========================
 
 This documentation includes:
 
-   - :doc:`getting-started/index` -- a basic introduction to TMS
+   - :doc:`getting-started/index` -- try TMS
    - :doc:`technical/index` -- design and API discussions
+   - :doc:`deployment/index` -- install TMS components
+   - :doc:`administration/index` -- maintaining TMS
    
-From a running TMS server, one can extract TMS's OpenAPI v3 specification and interact with its live API web page.  The links below are examples of those available to developers at the Texas Advanced Computing Center (TACC).  Similar links will work in any TMS installation by appropriately replacing the host component of the URLs.
+Online Documentation
+--------------------
+   
+From a running TMS server, one can extract TMS's OpenAPI v3 specification and interact with its live API web page.  The links below are examples of those available to developers at the Texas Advanced Computing Center (TACC).  Similar links will work in any TMS installation by replacing the host in the URLs.
 
-   - specification_ -- OpenAPI JSON specification
-   - LiveDocs_ -- Live API web page 
+   - `JSON specification`_ -- Viewable OpenAPI specification
+   - `YAML specification`_ -- Downloadable OpenAPI specification 
+   - `API liveDocs`_ -- Interactive API web page 
 
-.. _specification: https://tms-server-dev.tacc.utexas.edu:3000/spec
-.. _LiveDocs: https://tms-server-dev.tacc.utexas.edu:3000
+.. _JSON specification: https://tms-server-dev.tacc.utexas.edu:3000/spec
+.. _YAML specification: https://tms-server-dev.tacc.utexas.edu:3000/spec_yaml
+.. _API livedocs: https://tms-server-dev.tacc.utexas.edu:3000

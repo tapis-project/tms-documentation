@@ -1,19 +1,27 @@
 .. _getting-started:
 
+..
+    Comment: Heirarchy of headers will now be!
+    1: ### over and under
+    2: === under
+    3: --- under
+    4: ^^^ under
+    5: ~~~ under
+
+.. raw:: html
+
+    <style> .red {color:#FF4136; font-weight:bold; font-size:20px} </style>
+
+.. role:: red
+
 ###############
 Getting Started
 ###############
 
-This Getting Started guide will walk you through the initial steps of setting up
-the necessary accounts and installing
-the required software before moving to the Tapis Quickstart. If
-you are already using Docker Hub and the TACC Cloud APIs, feel free to jump
-right to the `Tapis Quickstart`_ or check
-out the Tapis Live Docs `site <https://tapis-project.github.io/live-docs/>`_.
+Quickstart
+==========
 
-.. contents:: :local:
+The easiest way to try out TMS is to run its Docker container in MVP mode and install the KeyCmd on a host machine on which you have an account.  Refer to :ref:`docker_server_label` to learn how to run the TMS server locally and :ref:`server_config_label` on how to configure it in MVP mode.  Refer to :ref:`keycmd_label` to learn how to install the KeyCmd module on a host and to :ref:`keycmd_config_label` on how to configure it. 
 
-Getting Ready
-=============
 
 

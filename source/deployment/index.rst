@@ -1,18 +1,53 @@
 .. _deployment:
 
-============================================
-Deployment & Administration Guide - Overview
-============================================
+..
+    Comment: Heirarchy of headers will now be!
+    1: ### over and under
+    2: === under
+    3: --- under
+    4: ^^^ under
+    5: ~~~ under
 
-.. note::
+.. raw:: html
 
-    This guide is for users wanting to deploy Tapis software in their own datacenter. Researchers who 
-    simply want to make use of the Tapis APIs do not need to deploy any Tapis components and can ignore
-    this guide. 
+    <style> .red {color:#FF4136; font-weight:bold; font-size:20px} </style>
 
+.. role:: red
 
-The Deployment & Administration Guide for Tapis provides documentation for system operators
-wishing to run Tapis services in their own datacenter. 
+#############################################
+Deployment
+#############################################
 
-- :doc:`tms_server_deploy`: Covers considerations and prerequisites before embarking on a Tapis deployment. 
+Native Server 
+=============
+
+Installation
+------------
+
+Execution
+---------
+
+.. _docker_server_label:
+
+Docker Server
+=============
+
+.. _keycmd_label:
+
+KeyCmd 
+======
+
+#############################################
+Configuration
+#############################################
+
+.. _server_config_label:
+
+Server Configuration
+====================
+
+.. _keycmd_config_label:
+
+KeyCmd Configuration
+====================
 

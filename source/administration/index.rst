@@ -1,16 +1,12 @@
+.. _administration:
+
 ..
-    Comment: Hierarchy of headers will now be!
+    Comment: Heirarchy of headers will now be!
     1: ### over and under
     2: === under
     3: --- under
     4: ^^^ under
     5: ~~~ under
-
-.. _jobs:
-
-####
-Jobs
-####
 
 .. raw:: html
 
@@ -18,10 +14,14 @@ Jobs
 
 .. role:: red
 
+#############################################
+Administration
+#############################################
 
-----
-
-Introduction to Jobs
+Maintaining Security
 ====================
 
+
+Database Backup
+===============
 
