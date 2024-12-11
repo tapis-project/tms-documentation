@@ -50,7 +50,7 @@ This documentation includes:
 Online Documentation
 --------------------
    
-From a running TMS server, one can extract TMS's OpenAPI v3 specification and interact with its live API web page.  The links below are examples of those available to developers at the Texas Advanced Computing Center (TACC).  Similar links will work in any TMS installation by replacing the host in the URLs.
+From a running TMS server, one can extract TMS's OpenAPI v3 specification and interact with its live API web page.  The links below are examples of those available to developers at the Texas Advanced Computing Center (TACC).  Similar links will work in any TMS installation by replacing the hosts in the URLs with local hosts.
 
    - `JSON specification`_ -- Viewable OpenAPI specification
    - `YAML specification`_ -- Downloadable OpenAPI specification 
