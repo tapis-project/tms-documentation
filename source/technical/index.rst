@@ -36,8 +36,8 @@ The server supports an SSH key pair generator and an external database to persis
 Hosts that support TMS-generated SSH keys will need their SSHD to be configured with the *KeyCmd* program to dynamically retrieve public keys from the TMS Server.  In :ref:`key_management_label`, we show how applications create SSH key pairs and use TMS as an on-demand, key escrow for public keys, which avoids the need to distribute those keys to hosts in advance.
 
 
-Future Extensions
-=================
+Possible Future Extensions
+==========================
 
 .. figure:: TMSArchitecture2-FULL.drawio.png
    :align: center
@@ -70,7 +70,7 @@ Key Management
 Creating TMS Keys
 =================
 
-The following figure describes how TMS is used by client applications---`Tapis`_ in this example---to create SSH key pairs.
+The following figure describes how TMS MVP is used by client applications---`Tapis`_ in this example---to create SSH key pairs.
 
 .. figure:: TMSSshKeyCreate.drawio.png
    :align: center
@@ -108,7 +108,7 @@ SK writes the private key to the Vault in a place that only the Systems service 
 Using TMS Keys
 ==============
 
-The following figure describes how TMS is used by client applications---`Tapis`_ in this example---to use SSH key pairs previously created.
+The following figure describes how TMS MVP is used by client applications---`Tapis`_ in this example---to use SSH key pairs previously created.
 
 .. figure:: TMSSshKeyUse.drawio.png
    :align: center
