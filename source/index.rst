@@ -54,8 +54,10 @@ From a running TMS server, one can extract TMS's OpenAPI v3 specification and in
 
    - `JSON specification`_ -- Viewable OpenAPI specification
    - `YAML specification`_ -- Downloadable OpenAPI specification 
-   - `API liveDocs`_ -- Interactive API web page 
+   - `API liveDocs`_ -- Interactive API web page
+   - `TMS source code`_ -- Github repository
 
 .. _JSON specification: https://tms-server-dev.tacc.utexas.edu:3000/spec
 .. _YAML specification: https://tms-server-dev.tacc.utexas.edu:3000/spec_yaml
 .. _API livedocs: https://tms-server-dev.tacc.utexas.edu:3000
+.. _TMS source code: https://github.com/tapis-project/tms_server
