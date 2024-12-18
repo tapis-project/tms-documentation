@@ -55,11 +55,20 @@ From a running TMS server, one can extract TMS's OpenAPI v3 specification and in
    - `JSON specification`_ -- Viewable OpenAPI specification
    - `YAML specification`_ -- Downloadable OpenAPI specification 
    - `API liveDocs`_ -- Interactive API web page
+
+Source Code
+-----------
+
    - `TMS server source code`_ -- Server github repository
    - `TMS KeyCMD source code`_ -- KeyCMD github repository
+   - `TMS Load Tests`_ -- Load test framework
+   - `TMS Admin Utility`_ -- On-server administrative program
 
 .. _JSON specification: https://tms-server-dev.tacc.utexas.edu:3000/spec
 .. _YAML specification: https://tms-server-dev.tacc.utexas.edu:3000/spec_yaml
 .. _API livedocs: https://tms-server-dev.tacc.utexas.edu:3000
 .. _TMS server source code: https://github.com/tapis-project/tms_server
 .. _TMS KeyCMD source code: https://github.com/tapis-project/tms_keycmd
+.. _TMS Load Tests: https://github.com/tapis-project/tms_loadtest
+.. _TMS Admin Utility: https://github.com/tapis-project/tmsadm
+
