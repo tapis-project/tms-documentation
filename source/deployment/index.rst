@@ -44,6 +44,10 @@ See `Server Configuration`_ for more information on server configuration.
 
 KeyCmd 
 ======
+To build and install *tms_keycmd*, please follow the procedure in `README-KEYCMD`_.
+
+.. _README-KEYCMD: https://github.com/tapis-project/tms_keycmd/blob/main/README.md
+
 
 #############################################
 Configuration
@@ -107,4 +111,7 @@ This is the only place these credentials appear in the clear. They should be bac
 
 KeyCmd Configuration
 ====================
+To configure *tms_keycmd*, please follow the procedure in `README-KEYCMD-CFG`_.
+
+.. _README-KEYCMD-CFG: https://github.com/tapis-project/tms_keycmd/blob/main/README.md#configuration-of-sshd
 
